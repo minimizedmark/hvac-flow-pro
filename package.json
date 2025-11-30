@@ -5,23 +5,31 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@stripe/stripe-js": "^4.5.0",
+    "@auth/supabase-adapter": "^1.0.4",
+    "@prisma/client": "^7.0.0",
+    "@stripe/stripe-js": "^8.5.3",
     "@supabase/supabase-js": "^2.45.4",
-    "micro": "^10.0.1",
-    "next": "15.0.1",
+    "micro": "^10.0.0",
+    "next": "^16.0.0",
+    "next-auth": "^4.24.7",
     "pdf-lib": "^1.17.1",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "resend": "^4.0.0",
-    "stripe": "^16.2.0"
+    "stripe": "^20.3.0",
+    "tailwindcss": "^4.1.17",
+    "twilio": "^5.3.4",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5.5.4"
+    "@types/node": "^20.17.7",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "prisma": "^7.0.0",
+    "typescript": "^5.9.3"
   }
 }
